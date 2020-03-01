@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:text="Select the Class"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner_class"
+        android:layout_width="221dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:entries="@array/class_sch" />
+
+    <TextView
+        android:layout_width="275dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:text="Select the Section"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        />
+    <Spinner
+        android:id="@+id/section"
+        android:layout_width="221dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:entries="@array/sec"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/absentees"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Enter the Absentees Roll Numbers"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="358dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:text="SUBMIT" />
+
+
+</LinearLayout>
